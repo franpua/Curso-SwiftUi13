@@ -1,50 +1,69 @@
 //
-//  ContentView.swift
+//  ExerciceView.swift
 //  tres-stacks
 //
-//  Created by Francisco Gonzalez Rodriguez on 20/11/21.
+//  Created by Francisco Gonzalez Rodriguez on 26/11/21.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ExerciceView: View {
     var body: some View {
-        VStack {
-            HeaderView()
+        VStack{
+            Header1View()
+
             
-            
-            
-            HStack(spacing:10) {
-                PricingView(title: "Plan Básico", subtitle: "Un curso incluido", price: "9,99", textColor: .white, backgroundColor: .green)
+                Pricing1View(title: "Plan Básico", subtitle: "Un curso incluido", price: "9,99", textColor: .white, backgroundColor: .green, icon: "star")
+                .padding(.horizontal)
             
                 ZStack {
-                PricingView(title: "Plan carrera", subtitle: "Una carrera completa", price: "29,99", textColor: .black, backgroundColor: Color(red: 200/255, green: 200/255, blue: 200/255), text: "El mejor para empezar")
+                Pricing1View(title: "Plan carrera", subtitle: "Una carrera completa", price: "29,99", textColor: .black, backgroundColor: Color(red: 200/255, green: 200/255, blue: 200/255), icon: "timer")
                     
-                
-                        
+                    Text("El mejor para empezar")
+                        .font(.system(.caption, design: .rounded))
+                        .foregroundColor(.white)
+                        .fontWeight(.black)
+                        .padding(6)
+                        .background(Color(red: 240/255, green: 180/255, blue: 50/255))
+                        .cornerRadius(50)
+                        .offset(x: 0, y: -80)
                 }
-            }
+            
             .padding(.all)
+            .offset(x: 0, y: -80)
             
             ZStack{
             
-                PricingView(title: "Definitivo", subtitle: "Todos los cursos online", price: "99.99", textColor: .white, backgroundColor:Color(red: 95/255, green: 95/255, blue: 95/255), icon: "lightbulb", text: "Conviértete en un máster del Universo")
+                Pricing1View(title: "Definitivo", subtitle: "Todos los cursos online", price: "99.99", textColor: .white, backgroundColor:Color(red: 95/255, green: 95/255, blue: 95/255), icon: "lightbulb")
+                
+                    .padding(.horizontal)
+                
+                Text("Conviértete en un máster del Universo")
+                    .font(.system(.caption, design: .rounded))
+                    .foregroundColor(.white)
+                    .fontWeight(.black)
+                    .padding(6)
+                    .background(Color(red: 240/255, green: 180/255, blue: 50/255))
+                    .cornerRadius(50)
+                    .offset(x: 0, y: -80)
+                
                     .padding(.horizontal)
                 
             }.padding(.vertical)
+                .offset(x: 0, y: -180)
             Spacer()
-
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ExerciceView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        
+        ExerciceView()
     }
 }
 
-struct HeaderView: View {
+struct Header1View: View {
     var body: some View {
         HStack {
             
@@ -64,7 +83,7 @@ struct HeaderView: View {
     }
 }
 
-struct PricingView: View {
+struct Pricing1View: View {
     
     var title: String
     var subtitle: String
@@ -72,7 +91,7 @@ struct PricingView: View {
     var textColor: Color
     var backgroundColor: Color
     var icon: String?
-    var text: String?
+    
     
     var body: some View {
         ZStack {
@@ -106,20 +125,6 @@ struct PricingView: View {
             .padding()
             .background(backgroundColor)
             .cornerRadius(15)
-            
-            text.map({
-                Text($0)
-                    .font(.system(.caption, design: .rounded))
-                    .foregroundColor(.white)
-                    .fontWeight(.black)
-                    .padding(6)
-                    .background(Color(red: 240/255, green: 180/255, blue: 50/255))
-                    .cornerRadius(50)
-                    .offset(x: 0, y: -80)
-                
-            })
-            
-            
             
         }
     }

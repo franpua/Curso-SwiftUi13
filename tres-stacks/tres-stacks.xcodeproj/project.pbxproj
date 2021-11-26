@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832666DF2751970300BDEEF8 /* ExerciceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832666DE275196FF00BDEEF8 /* ExerciceView.swift */; };
 		8340819B2749AD3000A684E5 /* tres_stacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340819A2749AD3000A684E5 /* tres_stacksApp.swift */; };
 		8340819D2749AD3000A684E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340819C2749AD3000A684E5 /* ContentView.swift */; };
 		8340819F2749AD3100A684E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8340819E2749AD3100A684E5 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		832666DE275196FF00BDEEF8 /* ExerciceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceView.swift; sourceTree = "<group>"; };
 		834081972749AD3000A684E5 /* tres-stacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tres-stacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8340819A2749AD3000A684E5 /* tres_stacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tres_stacksApp.swift; sourceTree = "<group>"; };
 		8340819C2749AD3000A684E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				8340819A2749AD3000A684E5 /* tres_stacksApp.swift */,
 				8340819C2749AD3000A684E5 /* ContentView.swift */,
+				832666DE275196FF00BDEEF8 /* ExerciceView.swift */,
 				8340819E2749AD3100A684E5 /* Assets.xcassets */,
 				834081A02749AD3100A684E5 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832666DF2751970300BDEEF8 /* ExerciceView.swift in Sources */,
 				8340819D2749AD3000A684E5 /* ContentView.swift in Sources */,
 				8340819B2749AD3000A684E5 /* tres_stacksApp.swift in Sources */,
 			);
