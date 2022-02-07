@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    
+    @State public var avanzarImagen = true
     var imageName: String
     var courseTitle: String
     var authorName: String
@@ -56,7 +56,8 @@ struct CardView: View {
 }
 
 struct CardView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        CardView(imageName: "Machine Learning", courseTitle: "Curso completo de Machine Learning: Data Science en Python", authorName: "Juan Gabriel Gomila", originalPrice: "199,99 €", discountPrice: "10,99 €")
+        CardView(avanzarImagen: true, imageName: "Machine Learning", courseTitle: "Curso completo de Machine Learning: Data Science en Python", authorName: "Juan Gabriel Gomila", originalPrice: "199,99 €", discountPrice: "10,99 €")
     }
 }
