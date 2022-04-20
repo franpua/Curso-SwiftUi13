@@ -16,21 +16,25 @@ struct DetailView: View {
     @ State private var showAlert = false // esta varible es para presentar la alerta al cerrar el modal.
     
     var body: some View {
-        VStack {
-            Image(deportiva.image)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 400)
-                //.cornerRadius(30)
-            
-            Text(deportiva.name)
-                .font(.system(.title, design: .rounded).bold())
-                .multilineTextAlignment(.center) //esto lo saqué mejor haciendo clic en Text y luego haciendo clic en text abajo en el canvas y lo seleccioné en el desplegable.
-                .frame(width: 200)
-            
-            Spacer()
+        ScrollView{
+            VStack {
+                Image(deportiva.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 400)
+                    //.cornerRadius(30)
+                
+                Text(deportiva.name)
+                    .font(.system(.title, design: .rounded).bold())
+                    .multilineTextAlignment(.center) //esto lo saqué mejor haciendo clic en Text y luego haciendo clic en text abajo en el canvas y lo seleccioné en el desplegable.
+                    .frame(width: 200)
+                Text(deportiva.description)
+                    .font(.body)
+                    .padding()
+                
+                Spacer()
+            }
         }
-        
         .edgesIgnoringSafeArea(.top) //para que la imagen nos vaya hasta arriba ignorando el área segura.
         //para colocar un botón para cerrar el modal lo vamos a hacer con un overlay y una HStack
         .overlay(alignment: .trailing) {

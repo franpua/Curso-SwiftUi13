@@ -14,19 +14,13 @@ struct ContentView: View {
     //@State var showModalView = false // en este caso NO vamos a hacer la variable privada porque sino solo vamos a poder acceder a ella a través de la ContentView, pero en este caso también necesitaremos que la DetailView acceda a ella para cerrar la vista.
     @State var selectedDeportiva: Deportiva? //esta variable de estado la creamos para saber que moto ha seleccionado el usuario para presentar la detail view en cuestión la vista va a requerir si os acordáis que le pasemos la moto en cuestión que ha sido seleccionada. Recordad que lo vamos a necesitar es almacenar la selección del usuario qué deportiva ha seleccionado en otra variable de estado por eso en la ContentView vais a necesitar un segundo estado segundo arroba State selectedDeportiva que será de tipo Deportiva y lo voy a colocar opcional. Vale con el interrogante sobre todo para que al inicio no haya un curso seleccionado inútilmente.
     
-    var deportivas = [Deportiva(name: "Aprilia RSV 1000 Factory", image: "Aprilia"),
-                  Deportiva(name: "BMW S1000RR", image: "BMW"),
-                  Deportiva(name: "Ducati panigale", image: "Ducati"),
-                  Deportiva(name: "Honda CBR1000RR", image: "Honda", feature: true),
-                  Deportiva(name: "Kawasaki 1000", image: "Kawasaki"),
-                  Deportiva(name: "KTM RC8", image: "KTM", feature: true),
-                  Deportiva(name: "Suzuki 1000", image: "Suzuki"),
-                  Deportiva(name: "Yamaha R1 60 Aniversario", image: "Yamaha")]
+    
     
     
     var body: some View {
         NavigationView{ // con esto hacmos que la vista sea navegable.
-            List(deportivas) { deportiva in
+            //aquí debajo al pasar todos los textos  de la varible de Deportivas a otro fichero ahora tengo que llamarlo de ese fichero el Struct y a su variable. 
+            List(DeportivaFactory.deportivas) { deportiva in
                 
                 fullRowMotorBike(deportiva: deportiva)//como quitamos el NavigationLink y estamos en una tabla para saber qeu se ha seleccionado algo lo hacemos con el onTapGesture:
                     .onTapGesture {
@@ -50,12 +44,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-struct Deportiva: Identifiable {
-    var id = UUID()
-    var name: String
-    var image: String
-    var feature: Bool = false //esto para finalizar sería para destacar una fila en concreto con la vista grande. A la que queramos destacar le pasamos arriba el parámetro en el array y en la lista hacemos un if. Eso sí, en este caso como en la nueva estructura no tenemos identifcador tendríamos que cambiarlo de nuevo por un deportivas.indices (se pone indices porque es plural) y cambiamos de nombre del parámetro antes del in por por ej: indice
-}
+
 
 struct rowMotorBike: View {
     
