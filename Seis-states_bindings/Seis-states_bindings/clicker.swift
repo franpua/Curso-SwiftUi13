@@ -36,21 +36,38 @@ struct clicker: View {
                 )
                 
                 
+                
+                
+                
         }
             HStack{
             
         Button {
             self.accountant -= 1
         } label: {
-           
-        }.buttonStyle(plusMineButtonStyle(plusmine: "-"))
+            
+            Rectangle()
+                .frame(width: 150, height: 100)
+                .foregroundColor(Color(red: 129/255, green: 255/255, blue: 3/255))
+                .overlay(Text("-"))
+                .font(.system(size: 50, weight: .black, design: .rounded))
+                .foregroundColor(.black)
+                .cornerRadius(50)
+        }.buttonStyle(plusMineButtonStyle())
         
         Button {
             self.accountant += 1
 
         } label: {
-           
-        }.buttonStyle(plusMineButtonStyle(plusmine: "+"))
+            Rectangle()
+                .frame(width: 150, height: 100)
+                .foregroundColor(Color(red: 129/255, green: 255/255, blue: 3/255))
+                .overlay(Text("+"))
+                .font(.system(size: 50, weight: .black, design: .rounded))
+                .foregroundColor(.black)
+                .cornerRadius(50)
+                
+        }.buttonStyle(plusMineButtonStyle())
             }.padding()
             Spacer()
         
@@ -83,18 +100,8 @@ struct clicker_Previews: PreviewProvider {
 }
 
 struct plusMineButtonStyle: ButtonStyle{
-    
-    var plusmine: String
-    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-        Rectangle()
-            .frame(width: 150, height: 100)
-            .foregroundColor(Color(red: 129/255, green: 255/255, blue: 3/255))
-            .overlay(Text(plusmine))
-            .font(.system(size: 50, weight: .black, design: .rounded))
-            .foregroundColor(.black)
-            .cornerRadius(50)
             .scaleEffect(configuration.isPressed ? 0.8 : 1.0)
     }
 }

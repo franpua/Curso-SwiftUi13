@@ -8,10 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State private var cardNumber = 1
-    @State public var avanzarImagen = false
-    
     var body: some View {
         
         VStack{
@@ -47,52 +43,22 @@ struct ContentView: View {
                 .frame(maxWidth: 370, alignment:  .leading)
             }
             
-        ScrollView(.horizontal){
+                ScrollView(.horizontal){
+            
             HStack{
-                Button {
-                    avanzarImagen = false
-                    withAnimation(Animation.spring()){
-                        cardNumber = cardNumber == 4 ? 1 : cardNumber - 1
-                    }
-                } label: {
-                    Image(systemName: "chevron.left")
-                        .font(.system(.largeTitle))
-                }
-
-            ZStack{
-                
-                switch cardNumber {
-                case 1:
-                
-                    CardView(avanzarImagen:avanzarImagen, imageName: "Machine Learning", courseTitle: "Curso completo de Machine Learning: Data Science en Python", authorName: "Juan Gabriel Gomila", originalPrice: "199,99 €", discountPrice: "10,99 €")
-                                .frame(width:300)
-                case 2:
-                    CardView(avanzarImagen:avanzarImagen,imageName: "Solidity", courseTitle: "Smart Contracts y Blockchain con Solidity de la A a la Z", authorName: "Juan Gabriel Gomila", originalPrice: "94,99 €", discountPrice: "9,99 €")
-                                .frame(width:300)
-                case 3:
-                    CardView(avanzarImagen:avanzarImagen,imageName: "Blockchain", courseTitle: "Curso completo de Blockchain de cero a experto", authorName: "Juan Gabriel Gomila", originalPrice: "189,99 €", discountPrice: "11,99 €")
-                                .frame(width:300)
-                default:
-                    CardView(avanzarImagen:avanzarImagen,imageName: "Dapps", courseTitle: "Crea DApps con Tokens NFT en Ethereum usando Truffle y React", authorName: "Juan Gabriel Gomila", originalPrice: "159,99 €", discountPrice: "9,99 €")
-                                .frame(width:300)
-                }
+        CardView(imageName: "Machine Learning", courseTitle: "Curso completo de Machine Learning: Data Science en Python", authorName: "Juan Gabriel Gomila", originalPrice: "199,99 €", discountPrice: "10,99 €")
+                    .frame(width:300)
         
-            }.onTapGesture {
-                avanzarImagen = true
-                withAnimation(Animation.spring()) {
-                    cardNumber = cardNumber == 4 ? 1 : cardNumber + 1
-                }
+        CardView(imageName: "Solidity", courseTitle: "Smart Contracts y Blockchain con Solidity de la A a la Z", authorName: "Juan Gabriel Gomila", originalPrice: "94,99 €", discountPrice: "9,99 €")
+                    .frame(width:300)
+
+        CardView(imageName: "Blockchain", courseTitle: "Curso completo de Blockchain de cero a experto", authorName: "Juan Gabriel Gomila", originalPrice: "189,99 €", discountPrice: "11,99 €")
+                    .frame(width:300)
+        
+        CardView(imageName: "Dapps", courseTitle: "Crea DApps con Tokens NFT en Ethereum usando Truffle y React", authorName: "Juan Gabriel Gomila", originalPrice: "159,99 €", discountPrice: "9,99 €")
+                    .frame(width:300)
+
             }
-                Button {
-                    avanzarImagen = false
-                    withAnimation(Animation.spring()){
-                        cardNumber = cardNumber == 4 ? 1 : cardNumber + 1
-                    }
-                } label: {
-                    Image(systemName: "chevron.right")
-                        .font(.system(.largeTitle))
-                }
-        }
         }
                 
                 
@@ -155,18 +121,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-extension AnyTransition{
-    
-    static var offsetScaledOpacityIn: AnyTransition{
-        AnyTransition.offset(x: -700, y: 0)
-            .combined(with: .scale)
-            .combined(with: .opacity)
-    }
-    static var offsetScaledOpacityOut: AnyTransition{
-        AnyTransition.offset(x: 700, y: 0)
-            .combined(with: .scale)
-            .combined(with: .opacity)
-    }
-    
 }

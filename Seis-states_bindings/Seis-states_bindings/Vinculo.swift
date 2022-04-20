@@ -27,6 +27,8 @@ struct Vinculo: View {
             
             Papelera(contador: $contador, black: $black, red: $red, blue: $blue)
             
+            
+          
         }
 
     }
@@ -82,7 +84,6 @@ struct Papelera: View {
             black = 0
             red = 0
             blue = 0
-            
             
         } label: {
             Image(systemName: "trash")
