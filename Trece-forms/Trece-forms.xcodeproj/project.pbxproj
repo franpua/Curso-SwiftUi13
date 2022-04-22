@@ -7,28 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83EDCA2E28106F2B001A7696 /* Doce_ModalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA2D28106F2B001A7696 /* Doce_ModalsApp.swift */; };
-		83EDCA3028106F2B001A7696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA2F28106F2B001A7696 /* ContentView.swift */; };
-		83EDCA3228106F36001A7696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EDCA3128106F36001A7696 /* Assets.xcassets */; };
-		83EDCA3528106F36001A7696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EDCA3428106F36001A7696 /* Preview Assets.xcassets */; };
-		83EDCA3C28106FB7001A7696 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA3B28106FB7001A7696 /* DetailView.swift */; };
-		83EDCA402810BCC8001A7696 /* Deportiva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA3F2810BCC8001A7696 /* Deportiva.swift */; };
-		83EDCA422810BE97001A7696 /* DeportivaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA412810BE97001A7696 /* DeportivaFactory.swift */; };
+		83EDCA52281204E0001A7696 /* Trece_formsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA51281204E0001A7696 /* Trece_formsApp.swift */; };
+		83EDCA54281204E0001A7696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA53281204E0001A7696 /* ContentView.swift */; };
+		83EDCA56281204E9001A7696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EDCA55281204E9001A7696 /* Assets.xcassets */; };
+		83EDCA59281204EA001A7696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EDCA58281204EA001A7696 /* Preview Assets.xcassets */; };
+		83EDCA6028120588001A7696 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA5F28120588001A7696 /* DetailView.swift */; };
+		83EDCA622812064A001A7696 /* Deportiva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDCA612812064A001A7696 /* Deportiva.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		83EDCA2A28106F2B001A7696 /* Doce-Modals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doce-Modals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83EDCA2D28106F2B001A7696 /* Doce_ModalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doce_ModalsApp.swift; sourceTree = "<group>"; };
-		83EDCA2F28106F2B001A7696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		83EDCA3128106F36001A7696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		83EDCA3428106F36001A7696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		83EDCA3B28106FB7001A7696 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		83EDCA3F2810BCC8001A7696 /* Deportiva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deportiva.swift; sourceTree = "<group>"; };
-		83EDCA412810BE97001A7696 /* DeportivaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeportivaFactory.swift; sourceTree = "<group>"; };
+		83EDCA4E281204E0001A7696 /* Trece-forms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trece-forms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83EDCA51281204E0001A7696 /* Trece_formsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trece_formsApp.swift; sourceTree = "<group>"; };
+		83EDCA53281204E0001A7696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83EDCA55281204E9001A7696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83EDCA58281204EA001A7696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83EDCA5F28120588001A7696 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		83EDCA612812064A001A7696 /* Deportiva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deportiva.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83EDCA2728106F2B001A7696 /* Frameworks */ = {
+		83EDCA4B281204E0001A7696 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,96 +36,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		83EDCA2128106F2B001A7696 = {
+		83EDCA45281204E0001A7696 = {
 			isa = PBXGroup;
 			children = (
-				83EDCA2C28106F2B001A7696 /* Doce-Modals */,
-				83EDCA2B28106F2B001A7696 /* Products */,
+				83EDCA50281204E0001A7696 /* Trece-forms */,
+				83EDCA4F281204E0001A7696 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		83EDCA2B28106F2B001A7696 /* Products */ = {
+		83EDCA4F281204E0001A7696 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83EDCA2A28106F2B001A7696 /* Doce-Modals.app */,
+				83EDCA4E281204E0001A7696 /* Trece-forms.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83EDCA2C28106F2B001A7696 /* Doce-Modals */ = {
+		83EDCA50281204E0001A7696 /* Trece-forms */ = {
 			isa = PBXGroup;
 			children = (
-				83EDCA2D28106F2B001A7696 /* Doce_ModalsApp.swift */,
-				83EDCA442810C32A001A7696 /* View */,
-				83EDCA432810C305001A7696 /* Model */,
-				83EDCA3128106F36001A7696 /* Assets.xcassets */,
-				83EDCA3328106F36001A7696 /* Preview Content */,
+				83EDCA51281204E0001A7696 /* Trece_formsApp.swift */,
+				83EDCA53281204E0001A7696 /* ContentView.swift */,
+				83EDCA5F28120588001A7696 /* DetailView.swift */,
+				83EDCA55281204E9001A7696 /* Assets.xcassets */,
+				83EDCA57281204EA001A7696 /* Preview Content */,
+				83EDCA612812064A001A7696 /* Deportiva.swift */,
 			);
-			path = "Doce-Modals";
+			path = "Trece-forms";
 			sourceTree = "<group>";
 		};
-		83EDCA3328106F36001A7696 /* Preview Content */ = {
+		83EDCA57281204EA001A7696 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				83EDCA3428106F36001A7696 /* Preview Assets.xcassets */,
+				83EDCA58281204EA001A7696 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		83EDCA432810C305001A7696 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				83EDCA3F2810BCC8001A7696 /* Deportiva.swift */,
-				83EDCA412810BE97001A7696 /* DeportivaFactory.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		83EDCA442810C32A001A7696 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				83EDCA2F28106F2B001A7696 /* ContentView.swift */,
-				83EDCA3B28106FB7001A7696 /* DetailView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83EDCA2928106F2B001A7696 /* Doce-Modals */ = {
+		83EDCA4D281204E0001A7696 /* Trece-forms */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83EDCA3828106F36001A7696 /* Build configuration list for PBXNativeTarget "Doce-Modals" */;
+			buildConfigurationList = 83EDCA5C281204EA001A7696 /* Build configuration list for PBXNativeTarget "Trece-forms" */;
 			buildPhases = (
-				83EDCA2628106F2B001A7696 /* Sources */,
-				83EDCA2728106F2B001A7696 /* Frameworks */,
-				83EDCA2828106F2B001A7696 /* Resources */,
+				83EDCA4A281204E0001A7696 /* Sources */,
+				83EDCA4B281204E0001A7696 /* Frameworks */,
+				83EDCA4C281204E0001A7696 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Doce-Modals";
-			productName = "Doce-Modals";
-			productReference = 83EDCA2A28106F2B001A7696 /* Doce-Modals.app */;
+			name = "Trece-forms";
+			productName = "Trece-forms";
+			productReference = 83EDCA4E281204E0001A7696 /* Trece-forms.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		83EDCA2228106F2B001A7696 /* Project object */ = {
+		83EDCA46281204E0001A7696 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					83EDCA2928106F2B001A7696 = {
+					83EDCA4D281204E0001A7696 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = 83EDCA2528106F2B001A7696 /* Build configuration list for PBXProject "Doce-Modals" */;
+			buildConfigurationList = 83EDCA49281204E0001A7696 /* Build configuration list for PBXProject "Trece-forms" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,45 +116,44 @@
 				en,
 				Base,
 			);
-			mainGroup = 83EDCA2128106F2B001A7696;
-			productRefGroup = 83EDCA2B28106F2B001A7696 /* Products */;
+			mainGroup = 83EDCA45281204E0001A7696;
+			productRefGroup = 83EDCA4F281204E0001A7696 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83EDCA2928106F2B001A7696 /* Doce-Modals */,
+				83EDCA4D281204E0001A7696 /* Trece-forms */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		83EDCA2828106F2B001A7696 /* Resources */ = {
+		83EDCA4C281204E0001A7696 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EDCA3528106F36001A7696 /* Preview Assets.xcassets in Resources */,
-				83EDCA3228106F36001A7696 /* Assets.xcassets in Resources */,
+				83EDCA59281204EA001A7696 /* Preview Assets.xcassets in Resources */,
+				83EDCA56281204E9001A7696 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		83EDCA2628106F2B001A7696 /* Sources */ = {
+		83EDCA4A281204E0001A7696 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EDCA422810BE97001A7696 /* DeportivaFactory.swift in Sources */,
-				83EDCA402810BCC8001A7696 /* Deportiva.swift in Sources */,
-				83EDCA3028106F2B001A7696 /* ContentView.swift in Sources */,
-				83EDCA3C28106FB7001A7696 /* DetailView.swift in Sources */,
-				83EDCA2E28106F2B001A7696 /* Doce_ModalsApp.swift in Sources */,
+				83EDCA622812064A001A7696 /* Deportiva.swift in Sources */,
+				83EDCA54281204E0001A7696 /* ContentView.swift in Sources */,
+				83EDCA6028120588001A7696 /* DetailView.swift in Sources */,
+				83EDCA52281204E0001A7696 /* Trece_formsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		83EDCA3628106F36001A7696 /* Debug */ = {
+		83EDCA5A281204EA001A7696 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		83EDCA3728106F36001A7696 /* Release */ = {
+		83EDCA5B281204EA001A7696 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,14 +267,14 @@
 			};
 			name = Release;
 		};
-		83EDCA3928106F36001A7696 /* Debug */ = {
+		83EDCA5D281204EA001A7696 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Doce-Modals/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Trece-forms/Preview Content\"";
 				DEVELOPMENT_TEAM = 99FQC7GBP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -308,7 +288,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FranciscoGonzalezRodriguez.Doce-Modals";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FranciscoGonzalezRodriguez.Trece-forms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,14 +296,14 @@
 			};
 			name = Debug;
 		};
-		83EDCA3A28106F36001A7696 /* Release */ = {
+		83EDCA5E281204EA001A7696 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Doce-Modals/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Trece-forms/Preview Content\"";
 				DEVELOPMENT_TEAM = 99FQC7GBP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -337,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FranciscoGonzalezRodriguez.Doce-Modals";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FranciscoGonzalezRodriguez.Trece-forms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,25 +328,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83EDCA2528106F2B001A7696 /* Build configuration list for PBXProject "Doce-Modals" */ = {
+		83EDCA49281204E0001A7696 /* Build configuration list for PBXProject "Trece-forms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83EDCA3628106F36001A7696 /* Debug */,
-				83EDCA3728106F36001A7696 /* Release */,
+				83EDCA5A281204EA001A7696 /* Debug */,
+				83EDCA5B281204EA001A7696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83EDCA3828106F36001A7696 /* Build configuration list for PBXNativeTarget "Doce-Modals" */ = {
+		83EDCA5C281204EA001A7696 /* Build configuration list for PBXNativeTarget "Trece-forms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83EDCA3928106F36001A7696 /* Debug */,
-				83EDCA3A28106F36001A7696 /* Release */,
+				83EDCA5D281204EA001A7696 /* Debug */,
+				83EDCA5E281204EA001A7696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 83EDCA2228106F2B001A7696 /* Project object */;
+	rootObject = 83EDCA46281204E0001A7696 /* Project object */;
 }

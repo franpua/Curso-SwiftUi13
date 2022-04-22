@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import UIKit
+import SwiftUI
 
 // Me saco esto de la vista también para ese fichero ya que esto forma parte del modelo de vista pero hay que dejar la vista limpia de todos estos datos. 
 
 struct DeportivaFactory {
     
-    
+    //let atributsBold = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18, weight: .bold)]
     static var deportivas = [Deportiva(name: "Aprilia RSV 1000 Factory", image: "Aprilia"),
                   Deportiva(name: "BMW S1000RR", image: "BMW"),
                   Deportiva(name: "Ducati panigale", image: "Ducati", description: """
@@ -21,7 +23,7 @@ La nueva Panigale V2 es una moto robusta pero compacta de diseño esencial con l
 
 La Panigale V2 presenta una basculante monobrazo de aluminio, el sello distintivo de las Ducati deportivas de alta gama. El extenso carenado destaca el motor Superquadro de dos cilindros más compacto (más pequeño en comparación con el Desmosedici Stradale), creando una moto que es visiblemente más delgada y menos intimidante que la Panigale V4.
 
-Gama de colores
+\("Gama de colores".uppercased())
 
 La Panigale V2 ahora está disponible tanto en el tradicional Ducati Red con bordes negros de 5 radios en Y como en la nueva y vibrante White Rosso que combina detalles en el intenso Ducati Red con Star White Silk.
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 // Me traigo esto para este fichero para formar el Modelo, ya que esto es propiamente de la vista sino del modelo de datos. 
 

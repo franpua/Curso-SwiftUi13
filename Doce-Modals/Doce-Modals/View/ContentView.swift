@@ -15,8 +15,6 @@ struct ContentView: View {
     @State var selectedDeportiva: Deportiva? //esta variable de estado la creamos para saber que moto ha seleccionado el usuario para presentar la detail view en cuestión la vista va a requerir si os acordáis que le pasemos la moto en cuestión que ha sido seleccionada. Recordad que lo vamos a necesitar es almacenar la selección del usuario qué deportiva ha seleccionado en otra variable de estado por eso en la ContentView vais a necesitar un segundo estado segundo arroba State selectedDeportiva que será de tipo Deportiva y lo voy a colocar opcional. Vale con el interrogante sobre todo para que al inicio no haya un curso seleccionado inútilmente.
     
     
-    
-    
     var body: some View {
         NavigationView{ // con esto hacmos que la vista sea navegable.
             //aquí debajo al pasar todos los textos  de la varible de Deportivas a otro fichero ahora tengo que llamarlo de ese fichero el Struct y a su variable. 

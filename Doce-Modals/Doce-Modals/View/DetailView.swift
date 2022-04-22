@@ -33,6 +33,7 @@ struct DetailView: View {
                     .padding()
                 
                 Spacer()
+                //Text("esto **esta en negrita** y esto en *cursiva*, esto está ~~esto está tachado~~, Visit Apple: [click here](https://apple.com)")
             }
         }
         .edgesIgnoringSafeArea(.top) //para que la imagen nos vaya hasta arriba ignorando el área segura.
